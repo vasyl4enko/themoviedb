@@ -64,7 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				11B63B782A28988300107CA7 /* Application */,
-				1166F3292A2894FF0073C262 /* Assets.xcassets */,
+				11B63B7A2A289B5500107CA7 /* Modules */,
+				11B63B792A289B1B00107CA7 /* Resourses */,
 				1166F32E2A2894FF0073C262 /* Info.plist */,
 			);
 			path = themoviedb;
@@ -80,6 +81,29 @@
 				1166F32B2A2894FF0073C262 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		11B63B792A289B1B00107CA7 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				1166F3292A2894FF0073C262 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		11B63B7A2A289B5500107CA7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				11B63B7B2A289B6000107CA7 /* Common */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		11B63B7B2A289B6000107CA7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		978EAE75B6B72BB0F2C2EE87 /* Pods */ = {
