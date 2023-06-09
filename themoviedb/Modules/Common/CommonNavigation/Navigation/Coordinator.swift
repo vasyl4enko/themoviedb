@@ -7,18 +7,23 @@
 
 import UIKit
 
-protocol FlowCoordinator: AnyObject {
-    
-}
-
-protocol MainBaseCoordinator: {
-    
-}
-
-public protocol Coordinator {
-    var parentCoordinator: Coordinator? {get set}
-    var children: [Coordinator] {get set}
-    var navigationController: UINavigationController {get set}
+public protocol Coordinator: AnyObject {
+    var children: [Coordinator] { get set }
+    var rootViewController: UIViewController! { get }
+    var parentCoordinator: Coordinator? { get set }
     
     func start()
+}
+
+public extension Coordinator {
+    var navigationRootViewController: UINavigationController? {
+            get {
+                rootViewController as? UINavigationController
+            }
+        }
+    
+    func addChildCoordinator(_ coordinator: Coordinator) {
+        coordinator.parentCoordinator = self
+        children.append(coordinator)
+    }
 }

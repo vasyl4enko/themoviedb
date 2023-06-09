@@ -8,27 +8,35 @@ import CommonNavigation
 import UIKit
 import SwiftUI
 import Home
+import Dashboard
 
-class SceneCoordinator: Coordinator {
-    var window: UIWindow
-    var parentCoordinator: Coordinator?
-    var children = [Coordinator]()
-    var navigationController: UINavigationController = .init()
+protocol SceneCoordinator: Coordinator {
     
-    init(window: UIWindow) {
+}
+
+final class SceneCoordinatorImpl: SceneCoordinator {
+    
+    // MARK: Public properties
+    
+    var children: [Coordinator] = []
+    weak var rootViewController: UIViewController!
+    weak var parentCoordinator: Coordinator?
+    
+    // MARK: - Dependencies
+    
+    private let window: UIWindow?
+    private let dashBoardCoordinator: DashboardCoordinator
+    
+    // MARK: - Init
+    
+    init(window: UIWindow?) {
         self.window = window
-        navigationController.setNavigationBarHidden(true, animated: false)
+        dashBoardCoordinator = DashboardCoordinatorImpl()
     }
     
     func start() {
-        
-        showMainFlow()
+        dashBoardCoordinator.start()
+        window?.rootViewController = dashBoardCoordinator.rootViewController
     }
     
-    func showMainFlow() {
-        let tabCoordinator = TabBarCoordinatorImpl(navigationController)
-        window.rootViewController = tabCoordinator.navigationController
-        tabCoordinator.start()
-        children.append(tabCoordinator)
-    }
 }

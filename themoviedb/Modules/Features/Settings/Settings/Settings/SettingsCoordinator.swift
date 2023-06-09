@@ -8,7 +8,7 @@
 import UIKit
 import CommonNavigation
 
-public class SettingsCoordinator: Coordinator {
+public class SettingsCoordinator/*: Coordinator*/ {
     public var parentCoordinator: Coordinator?
     public var children = [Coordinator]()
     public var navigationController: UINavigationController

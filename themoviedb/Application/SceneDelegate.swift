@@ -10,16 +10,17 @@ import CommonNavigation
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
-    var sceneCoordinar: Coordinator?
+    var window: UIWindow?
+//    var sceneCoordinar: Coordinator?
+    lazy var sceneCoordinator: SceneCoordinator = {
+        SceneCoordinatorImpl(window: window)
+    }()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            let sceneCoordinator = SceneCoordinator(window: window)
+            self.window = window
             sceneCoordinator.start()
-            self.sceneCoordinar = sceneCoordinator
-//            self.window = window
             window.makeKeyAndVisible()
         }
 //        guard let scene = scene as? UIWindowScene else { return }

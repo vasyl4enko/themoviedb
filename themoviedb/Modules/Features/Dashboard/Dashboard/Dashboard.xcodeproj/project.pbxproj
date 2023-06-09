@@ -7,58 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		114CBE462A3344D800C59E12 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CBE452A3344D800C59E12 /* NavigationController.swift */; };
-		11B63BAC2A289F1C00107CA7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B63BAB2A289F1C00107CA7 /* Coordinator.swift */; };
-		11B63BB82A28AE8D00107CA7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 11B63BB72A28AE8D00107CA7 /* Alamofire */; };
+		1157BCE92A30DF9200B155DF /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157BCE82A30DF9200B155DF /* DashboardCoordinator.swift */; };
+		1157BCEB2A30DFB000B155DF /* DashboardChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1157BCEA2A30DFB000B155DF /* DashboardChildCoordinatorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		114CBE452A3344D800C59E12 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		11B63B862A289C1200107CA7 /* CommonNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11B63BAB2A289F1C00107CA7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1157BCD72A30DDCF00B155DF /* Dashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1157BCE82A30DF9200B155DF /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		1157BCEA2A30DFB000B155DF /* DashboardChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardChildCoordinatorFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		11B63B832A289C1200107CA7 /* Frameworks */ = {
+		1157BCD42A30DDCF00B155DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B63BB82A28AE8D00107CA7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11B63B7C2A289C1200107CA7 = {
+		1157BCCD2A30DDCF00B155DF = {
 			isa = PBXGroup;
 			children = (
-				11B63BAA2A289DC000107CA7 /* Navigation */,
-				11B63B872A289C1200107CA7 /* Products */,
+				1157BCE72A30DE1700B155DF /* Dashboard */,
+				1157BCD82A30DDCF00B155DF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		11B63B872A289C1200107CA7 /* Products */ = {
+		1157BCD82A30DDCF00B155DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11B63B862A289C1200107CA7 /* CommonNavigation.framework */,
+				1157BCD72A30DDCF00B155DF /* Dashboard.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11B63BAA2A289DC000107CA7 /* Navigation */ = {
+		1157BCE72A30DE1700B155DF /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				11B63BAB2A289F1C00107CA7 /* Coordinator.swift */,
-				114CBE452A3344D800C59E12 /* NavigationController.swift */,
+				1157BCE82A30DF9200B155DF /* DashboardCoordinator.swift */,
+				1157BCEA2A30DFB000B155DF /* DashboardChildCoordinatorFactory.swift */,
 			);
-			path = Navigation;
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		11B63B812A289C1200107CA7 /* Headers */ = {
+		1157BCD22A30DDCF00B155DF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,44 +66,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		11B63B852A289C1200107CA7 /* CommonNavigation */ = {
+		1157BCD62A30DDCF00B155DF /* Dashboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11B63B982A289C1300107CA7 /* Build configuration list for PBXNativeTarget "CommonNavigation" */;
+			buildConfigurationList = 1157BCDE2A30DDCF00B155DF /* Build configuration list for PBXNativeTarget "Dashboard" */;
 			buildPhases = (
-				11B63B812A289C1200107CA7 /* Headers */,
-				11B63B822A289C1200107CA7 /* Sources */,
-				11B63B832A289C1200107CA7 /* Frameworks */,
-				11B63B842A289C1200107CA7 /* Resources */,
+				1157BCD22A30DDCF00B155DF /* Headers */,
+				1157BCD32A30DDCF00B155DF /* Sources */,
+				1157BCD42A30DDCF00B155DF /* Frameworks */,
+				1157BCD52A30DDCF00B155DF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CommonNavigation;
-			packageProductDependencies = (
-				11B63BB72A28AE8D00107CA7 /* Alamofire */,
-			);
-			productName = CommonNavigation;
-			productReference = 11B63B862A289C1200107CA7 /* CommonNavigation.framework */;
+			name = Dashboard;
+			productName = Dashboard;
+			productReference = 1157BCD72A30DDCF00B155DF /* Dashboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		11B63B7D2A289C1200107CA7 /* Project object */ = {
+		1157BCCE2A30DDCF00B155DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					11B63B852A289C1200107CA7 = {
-						CreatedOnToolsVersion = 14.3;
+					1157BCD62A30DDCF00B155DF = {
+						CreatedOnToolsVersion = 14.3.1;
 						LastSwiftMigration = 1430;
 					};
 				};
 			};
-			buildConfigurationList = 11B63B802A289C1200107CA7 /* Build configuration list for PBXProject "CommonNavigation" */;
+			buildConfigurationList = 1157BCD12A30DDCF00B155DF /* Build configuration list for PBXProject "Dashboard" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,21 +107,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 11B63B7C2A289C1200107CA7;
-			packageReferences = (
-				11B63BB62A28AE8D00107CA7 /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
-			productRefGroup = 11B63B872A289C1200107CA7 /* Products */;
+			mainGroup = 1157BCCD2A30DDCF00B155DF;
+			productRefGroup = 1157BCD82A30DDCF00B155DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11B63B852A289C1200107CA7 /* CommonNavigation */,
+				1157BCD62A30DDCF00B155DF /* Dashboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		11B63B842A289C1200107CA7 /* Resources */ = {
+		1157BCD52A30DDCF00B155DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,19 +128,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		11B63B822A289C1200107CA7 /* Sources */ = {
+		1157BCD32A30DDCF00B155DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B63BAC2A289F1C00107CA7 /* Coordinator.swift in Sources */,
-				114CBE462A3344D800C59E12 /* NavigationController.swift in Sources */,
+				1157BCE92A30DF9200B155DF /* DashboardCoordinator.swift in Sources */,
+				1157BCEB2A30DFB000B155DF /* DashboardChildCoordinatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		11B63B962A289C1300107CA7 /* Debug */ = {
+		1157BCDC2A30DDCF00B155DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +203,7 @@
 			};
 			name = Debug;
 		};
-		11B63B972A289C1300107CA7 /* Release */ = {
+		1157BCDD2A30DDCF00B155DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +260,7 @@
 			};
 			name = Release;
 		};
-		11B63B992A289C1300107CA7 /* Debug */ = {
+		1157BCDF2A30DDCF00B155DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -291,7 +282,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.the.movie.db.navigation.CommonNavigation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.movie.db.dashboard.Dashboard;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -301,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		11B63B9A2A289C1300107CA7 /* Release */ = {
+		1157BCE02A30DDCF00B155DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -323,7 +314,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.the.movie.db.navigation.CommonNavigation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.movie.db.dashboard.Dashboard;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -335,44 +326,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11B63B802A289C1200107CA7 /* Build configuration list for PBXProject "CommonNavigation" */ = {
+		1157BCD12A30DDCF00B155DF /* Build configuration list for PBXProject "Dashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11B63B962A289C1300107CA7 /* Debug */,
-				11B63B972A289C1300107CA7 /* Release */,
+				1157BCDC2A30DDCF00B155DF /* Debug */,
+				1157BCDD2A30DDCF00B155DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11B63B982A289C1300107CA7 /* Build configuration list for PBXNativeTarget "CommonNavigation" */ = {
+		1157BCDE2A30DDCF00B155DF /* Build configuration list for PBXNativeTarget "Dashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11B63B992A289C1300107CA7 /* Debug */,
-				11B63B9A2A289C1300107CA7 /* Release */,
+				1157BCDF2A30DDCF00B155DF /* Debug */,
+				1157BCE02A30DDCF00B155DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		11B63BB62A28AE8D00107CA7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = exactVersion;
-				version = 5.7.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		11B63BB72A28AE8D00107CA7 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 11B63BB62A28AE8D00107CA7 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 11B63B7D2A289C1200107CA7 /* Project object */;
+	rootObject = 1157BCCE2A30DDCF00B155DF /* Project object */;
 }
