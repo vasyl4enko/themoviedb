@@ -30,6 +30,13 @@
 			remoteGlobalIDString = 1157BCD72A30DDCF00B155DF;
 			remoteInfo = Dashboard;
 		};
+		116435072A335AEE0094E528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 116435032A335AED0094E528 /* Networking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 116434F92A335AED0094E528;
+			remoteInfo = Networking;
+		};
 		11A81B822A2DE7B100B6B56A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11A81B7E2A2DE7B100B6B56A /* Home.xcodeproj */;
@@ -79,6 +86,7 @@
 /* Begin PBXFileReference section */
 		005E4C5C7B2D6A05D38D5F2B /* Pods_themoviedb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_themoviedb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1157BCE12A30DDCF00B155DF /* Dashboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dashboard.xcodeproj; path = Dashboard/Dashboard.xcodeproj; sourceTree = "<group>"; };
+		116435032A335AED0094E528 /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = Networking/Networking.xcodeproj; sourceTree = "<group>"; };
 		1166F31D2A2894FC0073C262 /* themoviedb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = themoviedb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1166F3202A2894FC0073C262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1166F3222A2894FC0073C262 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +121,14 @@
 			isa = PBXGroup;
 			children = (
 				1157BCE62A30DDCF00B155DF /* Dashboard.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		116435042A335AED0094E528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				116435082A335AEE0094E528 /* Networking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,6 +218,7 @@
 		11B63B7B2A289B6000107CA7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				116435032A335AED0094E528 /* Networking.xcodeproj */,
 				11A81B8D2A2DE7D600B6B56A /* CommonNavigation.xcodeproj */,
 			);
 			path = Common;
@@ -310,6 +327,10 @@
 					ProjectRef = 11A81B7E2A2DE7B100B6B56A /* Home.xcodeproj */;
 				},
 				{
+					ProductGroup = 116435042A335AED0094E528 /* Products */;
+					ProjectRef = 116435032A335AED0094E528 /* Networking.xcodeproj */;
+				},
+				{
 					ProductGroup = 11A81C9F2A2F595E00B6B56A /* Products */;
 					ProjectRef = 11A81C962A2F58FE00B6B56A /* Settings.xcodeproj */;
 				},
@@ -327,6 +348,13 @@
 			fileType = wrapper.framework;
 			path = Dashboard.framework;
 			remoteRef = 1157BCE52A30DDCF00B155DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		116435082A335AEE0094E528 /* Networking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Networking.framework;
+			remoteRef = 116435072A335AEE0094E528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		11A81B832A2DE7B100B6B56A /* Home.framework */ = {
