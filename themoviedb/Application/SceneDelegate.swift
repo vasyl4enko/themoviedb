@@ -11,7 +11,6 @@ import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-//    var sceneCoordinar: Coordinator?
     lazy var sceneCoordinator: SceneCoordinator = {
         SceneCoordinatorImpl(window: window)
     }()
@@ -20,15 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             self.window = window
-            sceneCoordinator.start()
+//            sceneCoordinator.start()
             window.makeKeyAndVisible()
         }
-//        guard let scene = scene as? UIWindowScene else { return }
-//        window = UIWindow(windowScene: scene)
-//        window?.rootViewController = HomeViewController()
-//        window?.makeKeyAndVisible()
     }
-    
 }
-
-//            window.rootViewController = HomeViewController()
