@@ -22,7 +22,7 @@ class HomeCoordinatorImpl: HomeCoordinator {
     }
     
     func start() {
-        <#code#>
+        
     }
     
     

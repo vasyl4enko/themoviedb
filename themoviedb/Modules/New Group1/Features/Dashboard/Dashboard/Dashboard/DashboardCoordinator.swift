@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import CommonNavigation
 
 public protocol DashboardCoordinator: Coordinator {
     
