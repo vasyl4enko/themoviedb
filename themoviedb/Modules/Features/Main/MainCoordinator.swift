@@ -8,18 +8,16 @@
 import UIKit
 
 protocol MainTabBarCoordinatorHandling: AnyObject {
-    func handle(event: MainCoordinatorImpl.Event)
+    func handle(event: MainCoordinator.Event)
 }
 
-protocol MainCoordinator: TabBarConntrollerCoordinator {}
-
-class MainCoordinatorImpl: MainCoordinator {
+class MainCoordinator: TabBarConntrollerCoordinator {
     
     enum Event {}
-    
+    weak var parent: MainTabBarCoordinatorHandling?
     var tabBarController: UITabBarController
     var childCoordinators: [Coordinator] = []
-    weak var parent: MainTabBarCoordinatorHandling?
+    
     
     // MARK: Initializers
     
@@ -37,37 +35,19 @@ class MainCoordinatorImpl: MainCoordinator {
     // MARK: Public
     
     func start() {
-//        let chatNavigationController = ChatNavigationController()
-//                let chatCoordinator = ChatCoordinator(navigationController: chatNavigationController)
-//                chatCoordinator.parent = self
-//                childCoordinators.append(chatCoordinator)
-//
-//                let orderNavigationController = OrderNavigationController()
-//                let orderCoordinator = OrderCoordinator(navigationController: orderNavigationController)
-//                orderCoordinator.parent = self
-//                childCoordinators.append(orderCoordinator)
-//
-//                tabBarController.setViewControllers([
-//                    chatNavigationController,
-//                    orderNavigationController
-//                ], animated: true)
+        let homeNavigationViewController = HomeNavigationController()
+        let homeCoordinator = HomeCoordinator(navigationController: homeNavigationViewController)
+        homeCoordinator.parent = self
+        self.childCoordinators.append(homeCoordinator)
+
+        tabBarController.setViewControllers([
+            homeNavigationViewController,
+        ], animated: true)
     }
-    func createAndConfigureCoordinator(for dashboardTab: DashboardTab)/* -> Coordinator */{
-//        let coordinator: Coordinator
-//        switch dashboardTab {
-//        case .home:
-//            let homeCoordinator = childCoordinatorFactory.homeCoordinator()
-//            homeCoordinator.start()
-//            coordinator = homeCoordinator
-//        }
-//        navigationRootViewController?.setViewControllers([coordinator.rootViewController], animated: false)
-//        coordinator.navigationRootViewController?.title = "1"
-//        
-//        return coordinator
-    }
-    
 }
 
-enum DashboardTab: Int, CaseIterable {
-    case home
+extension MainCoordinator: HomeCoordinatorHandling {
+    func handle(event: HomeCoordinator.Event) {
+        
+    }
 }

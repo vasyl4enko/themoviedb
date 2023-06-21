@@ -21,51 +21,18 @@ class SceneCoordinatorImpl: SceneCoordinator {
     }
     
     func start() {
-        
+        showMainTabBar()
     }
     
     private func showMainTabBar() {
-        let mainTabBarCoordinator = MainCoordinatorImpl()
+        let mainTabBarCoordinator = MainCoordinator()
         mainTabBarCoordinator.parent = self
+        window.rootViewController = mainTabBarCoordinator.tabBarController
     }
 }
 
 extension SceneCoordinatorImpl: MainTabBarCoordinatorHandling {
-    func handle(event: MainCoordinatorImpl.Event) {
+    func handle(event: MainCoordinator.Event) {
         
     }
 }
-
-//import Home
-//import Dashboard
-
-//protocol SceneCoordinator: Coordinator {
-//
-//}
-//
-//final class SceneCoordinatorImpl: SceneCoordinator {
-//
-//    // MARK: Public properties
-//
-//    var children: [Coordinator] = []
-//    weak var rootViewController: UIViewController!
-//    weak var parentCoordinator: Coordinator?
-//
-//    // MARK: - Dependencies
-//
-//    private let window: UIWindow?
-//    private let dashBoardCoordinator: DashboardCoordinator
-//
-//    // MARK: - Init
-//
-//    init(window: UIWindow?) {
-//        self.window = window
-//        dashBoardCoordinator = DashboardCoordinatorImpl()
-//    }
-//
-//    func start() {
-//        dashBoardCoordinator.start()
-//        window?.rootViewController = dashBoardCoordinator.rootViewController
-//    }
-//
-//}
