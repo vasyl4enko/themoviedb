@@ -19,8 +19,19 @@ class SceneCoordinatorImpl: SceneCoordinator {
         
         start()
     }
-    
+    let api: FilmsAPIProtocol = FilmsAPI()
     func start() {
+        api.getFilms { result in
+            switch result {
+            case .success(let films):
+                print(films)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        
+        
         showMainTabBar()
     }
     

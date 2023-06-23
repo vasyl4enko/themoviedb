@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		110A4AD82A43383000D2C565 /* DEBUG_KEYS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 110A4AD72A43383000D2C565 /* DEBUG_KEYS.plist */; };
 		110A4ADA2A43395900D2C565 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110A4AD92A43395900D2C565 /* Environment.swift */; };
+		110A4ADD2A44664200D2C565 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110A4ADC2A44664200D2C565 /* Film.swift */; };
 		112E61592A41BE2C0013E3C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E61582A41BE2C0013E3C7 /* HomeViewController.swift */; };
 		112E615B2A41BE410013E3C7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E615A2A41BE410013E3C7 /* HomeViewModel.swift */; };
 		112E615F2A41E9060013E3C7 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E615E2A41E9060013E3C7 /* HomeNavigationController.swift */; };
@@ -32,6 +33,7 @@
 		005E4C5C7B2D6A05D38D5F2B /* Pods_themoviedb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_themoviedb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		110A4AD72A43383000D2C565 /* DEBUG_KEYS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DEBUG_KEYS.plist; sourceTree = "<group>"; };
 		110A4AD92A43395900D2C565 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		110A4ADC2A44664200D2C565 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		112E61582A41BE2C0013E3C7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		112E615A2A41BE410013E3C7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		112E615E2A41E9060013E3C7 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
@@ -68,11 +70,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110A4ADB2A44662E00D2C565 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				110A4ADC2A44664200D2C565 /* Film.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		112E61602A42DF740013E3C7 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				112E616E2A42DFBC0013E3C7 /* archive */,
 				112E61612A42DF8E0013E3C7 /* Networking */,
+				112E616E2A42DFBC0013E3C7 /* archive */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -80,7 +90,7 @@
 		112E61612A42DF8E0013E3C7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				112E61732A42EFDE0013E3C7 /* Repositories */,
+				112E61732A42EFDE0013E3C7 /* Films */,
 				112E616A2A42DFA70013E3C7 /* BaseAPI.swift */,
 				112E616B2A42DFA70013E3C7 /* BaseType.swift */,
 			);
@@ -97,13 +107,13 @@
 			path = archive;
 			sourceTree = "<group>";
 		};
-		112E61732A42EFDE0013E3C7 /* Repositories */ = {
+		112E61732A42EFDE0013E3C7 /* Films */ = {
 			isa = PBXGroup;
 			children = (
 				112E61742A42F00E0013E3C7 /* FilmsNetworking.swift */,
 				112E61762A42F0210013E3C7 /* FilmsAPI.swift */,
 			);
-			path = Repositories;
+			path = Films;
 			sourceTree = "<group>";
 		};
 		1166F3142A2894FC0073C262 = {
@@ -129,6 +139,8 @@
 			children = (
 				11B63B782A28988300107CA7 /* Application */,
 				11B63B7A2A289B5500107CA7 /* Modules */,
+				112E61602A42DF740013E3C7 /* Managers */,
+				110A4ADB2A44662E00D2C565 /* Models */,
 				11B63B792A289B1B00107CA7 /* Resourses */,
 				1166F32E2A2894FF0073C262 /* Info.plist */,
 				110A4AD72A43383000D2C565 /* DEBUG_KEYS.plist */,
@@ -195,7 +207,6 @@
 		11B63B7A2A289B5500107CA7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				112E61602A42DF740013E3C7 /* Managers */,
 				119C53CC2A3CBA1E00ED1607 /* Features */,
 				119C53C82A3CADFA00ED1607 /* Common */,
 			);
@@ -332,6 +343,7 @@
 				112E61772A42F0210013E3C7 /* FilmsAPI.swift in Sources */,
 				112E61592A41BE2C0013E3C7 /* HomeViewController.swift in Sources */,
 				119C53CE2A3CBA4500ED1607 /* MainCoordinator.swift in Sources */,
+				110A4ADD2A44664200D2C565 /* Film.swift in Sources */,
 				119C53D42A3CC09900ED1607 /* HomeCoordinator.swift in Sources */,
 				1166F3232A2894FC0073C262 /* SceneDelegate.swift in Sources */,
 				112E616C2A42DFA70013E3C7 /* BaseAPI.swift in Sources */,

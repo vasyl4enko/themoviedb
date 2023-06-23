@@ -3,6 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>32a757ee735b80b7e23cf24ed9d0729f</string>
+	<string>a9e6fbc376e7dd43037bd17ca7bff423</string>
+	<key>BASE_URL</key>
+	<string>https://api.themoviedb.org/3</string>
 </dict>
 </plist>
