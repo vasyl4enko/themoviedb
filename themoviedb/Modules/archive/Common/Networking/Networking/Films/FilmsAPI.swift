@@ -6,15 +6,16 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol FilmsAPIProtocol {
-    func getFilms(completionHandler: @escaping (Result<Films, NSError>) -> Void)
+    func getFilms(completionHandler: @escaping (Result<Films, Error>) -> Void)
 }
 
 class FilmsAPI: BaseAPI<FilmsNetworking>, FilmsAPIProtocol {
-    func getFilms(completionHandler: @escaping (Result<Films, NSError>) -> Void) {
+    func getFilms(completionHandler: @escaping (Result<Films, Error>) -> Void) {
         self.fetchData(target: .getFilms, responseClass: Films.self) { (result) in
-            print(result)
+            completionHandler(result)
         }
     }
 }

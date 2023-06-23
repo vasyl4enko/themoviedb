@@ -37,7 +37,7 @@ extension FilmsNetworking: TargetType {
     var task: Task {
         switch self {
         case .getFilms:
-            return .requestParameters(parameters: ["api_key" : "a9e6fbc376e7dd43037bd17ca7bff423"], encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: ["api_key" : "a9e6fbc376e7dd43037bd17ca7bff42"], encoding: URLEncoding.queryString)
         }
     }
     

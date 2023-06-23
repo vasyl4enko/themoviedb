@@ -160,21 +160,51 @@
                   endingLineNumber = "26"
                   offsetFromSymbolStart = "48">
                </Location>
+               <Location
+                  uuid = "F4CF5E1A-B95B-4140-9C1F-AE8B99758022 - 86948299f146ffb3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;themoviedb.Films, Alamofire.AFError&gt;) -&gt; () in themoviedb.SceneCoordinatorImpl.start() -&gt; ()"
+                  moduleName = "themoviedb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oleksandr/Developer/themoviedb/themoviedb/Application/SceneCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "F4CF5E1A-B95B-4140-9C1F-AE8B99758022 - 92616bd3a1af3757"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;themoviedb.Films, Swift.Error&gt;) -&gt; () in themoviedb.SceneCoordinatorImpl.start() -&gt; ()"
+                  moduleName = "themoviedb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oleksandr/Developer/themoviedb/themoviedb/Application/SceneCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "52">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D29A48BE-E2E8-493D-9AC3-BEBC3974736A"
+            uuid = "3A72245D-93A8-4DF1-B90E-4BAFF9628DF4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "themoviedb/Modules/archive/Common/Networking/Networking/BaseAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "fetchData(target:responseClass:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -182,17 +212,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E05CF084-4191-447A-98A0-1F0E8D359A0E"
+            uuid = "02CE69CC-3D7B-49E1-B730-9BC0D8C5EAD2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "themoviedb/Modules/archive/Common/Networking/Networking/BaseAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "fetchData(target:responseClass:completionHandler:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "02CE69CC-3D7B-49E1-B730-9BC0D8C5EAD2 - 2d5ce03b3ef72f30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_1_0, Alamofire.AFError&gt;) -&gt; () in themoviedb.BaseAPI.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(target: &#x3c4;_0_0, responseClass: &#x3c4;_1_0.Type, completionHandler: (Swift.Result&lt;&#x3c4;_1_0, Alamofire.AFError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "themoviedb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oleksandr/Developer/themoviedb/themoviedb/Modules/archive/Common/Networking/Networking/BaseAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "02CE69CC-3D7B-49E1-B730-9BC0D8C5EAD2 - b0f5b9935d5a4bdd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_1_0, Alamofire.AFError&gt;) -&gt; () in themoviedb.BaseAPI.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(target: &#x3c4;_0_0, responseClass: &#x3c4;_1_0.Type, completionHandler: (Swift.Result&lt;&#x3c4;_1_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "themoviedb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oleksandr/Developer/themoviedb/themoviedb/Modules/archive/Common/Networking/Networking/BaseAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
