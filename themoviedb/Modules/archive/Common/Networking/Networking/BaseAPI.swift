@@ -14,7 +14,7 @@ class BaseAPI<T: TargetType> {
         let headers = Alamofire.HTTPHeaders(target.headers ?? [:])
         let parameters = buildParams(task: target.task)
         let afRequest = AF.request(target.baseURL + target.path, method: method, parameters: parameters.0, encoding: parameters.1, headers: headers)
-        afRequest.responseDecodable(of: M.self) { response in
+        afRequest.responseDecodable(of: M.self, decoder: JSONDecoder()) { response in
             guard response.response?.statusCode == 200 else {
                 return
             }
